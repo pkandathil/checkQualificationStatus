@@ -1,0 +1,17 @@
+{
+  "name": "scrapwork",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "",
+  "author": "Tech Samurais",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
