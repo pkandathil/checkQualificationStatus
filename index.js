@@ -26,9 +26,9 @@ const isDisqualifiedFlagValid = (disqualifiedFlag) => {
 const checkQualificationStatus = (ports, maxAttainableSpeed, disqualifiedFlag) => {
   const NOT_QUALIFIED = 'not-qualified'
   const QUALIFIED = 'qualified'
-  let result = QUALIFIED
-  if (!isPortsValid(ports) || !isSpeedValid(maxAttainableSpeed)  || !isDisqualifiedFlagValid(disqualifiedFlag)) {
-    result = NOT_QUALIFIED
+  let result = NOT_QUALIFIED
+  if (isPortsValid(ports) && isSpeedValid(maxAttainableSpeed) && isDisqualifiedFlagValid(disqualifiedFlag)) {
+    result = QUALIFIED
   }
   return result
 };
